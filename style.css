@@ -125,7 +125,7 @@ a {
     align-items: center;
     list-style: none;
     gap: 20px;
-    padding: 0 700px;
+    padding: 0 500px;
 }
 
 .nav-links div a{
@@ -317,7 +317,7 @@ footer .media {
 
 .product-name{
     padding: 10px 10px 10px 0px;
-    font-family: "Bembo MT Pro"; /*Luke to teach how to link font - 30 March*/
+    font-family: "Bembo MT Pro"; 
     font-weight: 400;
     font-size: 24px;
     
@@ -343,8 +343,8 @@ footer .media {
 }
 
 .atome-logo { 
-  width: 20%;
-  margin-top: -5px;
+  width: 8%;
+ 
 }
 
 .stock {
@@ -383,27 +383,27 @@ footer .media {
   .add-to-cart-btn {
     background-color: black;
     color: white;
-    width: 80%;
+    width: 40%;
     height: 35px;
     border: none;
     font-weight: bold;
   }
 
   .qty {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 35px;
     text-align: center;
   }
 
   .dot {
     height: 25px;
     width: 25px;
-    background-color: #bbb;
+    background-color: #62917f;
     border-radius: 50%;
     display: inline-block;
   }
 
-  /* tomorrow */
+  /* to continue on 15/4/2023 saturday */
   .unavailable-color {
     position: relative;
   }
@@ -448,6 +448,27 @@ footer .media {
   /* #817e68 */
 
   .purple {
-    background-color: #817e68; 
+    background-color: #95859f; 
     background-size: initial;
   }
+
+  .dark-green {
+    background-color: #5f8e7c; 
+    background-size: initial;
+  }
+
+  .orange {
+    background-color: #d8a54a; 
+    background-size: initial;
+  }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
