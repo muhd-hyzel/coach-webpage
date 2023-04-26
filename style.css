@@ -156,8 +156,11 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-main {
-    height: 70vh;
+.mainbody {
+    margin: 0px 151px;
+    padding: 19px 12px 0px;
+    box-sizing: border-box;
+    
 }
 
 .section {
@@ -206,15 +209,53 @@ ul {
     padding-left: 250px;
 
 }
-      
-ul {
-    list-style-type: none;
+
+.detailscont {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    width: 28vw;
+
 }
+
+summary {
+    display: block;
+  }
+
+.sum1::after {
+    margin-left: 350px;
+    display: inline-block;
+    transition: 0.2s;
+    content: '\203A'; /* chevron */
+  }
+
+.sum2::after {
+    margin-left: 310px;
+    display: inline-block;
+    transition: 0.2s;
+    content: '\203A'; /* chevron */
+  }
+
+summary::after {
+    font-size: 26px;
+    transform: rotate(90deg);
+  }
+
+.detailslist {
+    opacity: 0.6;
+}
+
+.editors_note {
+    opacity: 0.6;
+}
+/* ul {
+    list-style-type: none;
+} */
   
 .img {
     list-style-type: none;
   
-    
 
 }
 
@@ -225,62 +266,93 @@ footer *{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.content {
-    height: 1vh;
+footer .outer-cont {
+    margin: 10px 151px 0px;
+    margin: 0px 151px;
+    box-sizing: border-box;
+    color: black;
+    display: block;
+    border-bottom: 1px solid lightgray;
+
 }
 
-footer {
-    width: 100%;
-    margin: auto;
+footer .inner-cont1 {
+    box-sizing: border-box;
+    display: flex;
+    /* font-weight: 400; */
+    justify-content: center;
+    padding-top: 10px;
+    /* width: 1320px; */
+
 }
 
-.main {
+footer .inner-cont2 {
+    box-sizing: border-box;
+    display: block;
+    padding: 20px 30px 40px 25px;
+    color: #000;
+ 
+}
+
+
+footer h3 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+footer .main {
+    margin: 0px 151px;
+    padding: 19px 12px 0px;
+    /* max-width: 80vw; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 3rem;
+
 }
 
-.end {
-    width: 75%;
-}
+footer h4{
+    font-size: 14px;
+    color: black;
+    margin-bottom: 3px;
+    opacity: 0.9;
 
-footer h3{
-    color: #333;
-    margin-bottom: 10px;
-    opacity: 0.7;
 }
 
 footer p {
-    opacity: 0.8;
+    font-size: 14px;
+    opacity: 0.9;
 }
 
 footer a{
     color: black;
     text-decoration: none;
-    opacity: 0.8;
+    opacity: 0.9;
 
 }
 
 footer a:hover {
-    opacity: 1;
+    opacity: 0.7;
 }
 
 footer li{
+    font-size: 14px;
     list-style: none;
-    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 footer form{
     width: 100%;
+    margin-top: 10px;
     height: 4vh;
     background: white;
-    border: 1px solid black;
+    border: 2px solid lightgrey;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 
@@ -290,6 +362,7 @@ footer form input {
     outline: none;
 }
 
+
 .fa-envelope {
     align-items: center;
     padding: 5px 10px;
@@ -297,7 +370,7 @@ footer form input {
 
 footer .submit {
     background: black;
-    padding: 10px 2px;
+    padding: 7px 3px;
     border: none;
     outline: none;
     color: #fff;
@@ -306,14 +379,23 @@ footer .submit {
 
 footer .media {
     margin-top: 10px;
+
     
 }
 
-.endnote {
+footer .endcont {
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(245, 233, 233);
+}
+
+footer .endnote {
     font-size: 12px;
     text-align: center;
 
 }
+
+/* End of footer section */
 
 .product-name{
     padding: 10px 10px 10px 0px;
@@ -343,8 +425,8 @@ footer .media {
 }
 
 .atome-logo { 
-  width: 8%;
- 
+  width: 20%;
+  margin-top: -5px;
 }
 
 .stock {
@@ -383,22 +465,22 @@ footer .media {
   .add-to-cart-btn {
     background-color: black;
     color: white;
-    width: 40%;
+    width: 80%;
     height: 35px;
     border: none;
     font-weight: bold;
   }
 
   .qty {
-    width: 40px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     text-align: center;
   }
 
   .dot {
     height: 25px;
     width: 25px;
-    background-color: #62917f;
+    background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
   }
@@ -448,19 +530,10 @@ footer .media {
   /* #817e68 */
 
   .purple {
-    background-color: #95859f; 
+    background-color: #817e68; 
     background-size: initial;
   }
 
-  .dark-green {
-    background-color: #5f8e7c; 
-    background-size: initial;
-  }
-
-  .orange {
-    background-color: #d8a54a; 
-    background-size: initial;
-  }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
